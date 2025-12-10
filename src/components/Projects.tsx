@@ -87,7 +87,7 @@ export default function Projects() {
                   whileHover={{ opacity: 1, y: 0 }}
                   className="mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
-                  <span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-sm font-body font-medium border border-white/30">
+                  <span className="inline-block px-4 py-1.5 bg-black/40 backdrop-blur-md rounded-full text-sm font-body font-medium border-2 border-white shadow-lg">
                     {project.category}
                   </span>
                 </motion.div>
@@ -107,7 +107,7 @@ export default function Projects() {
                 initial={{ scale: 0, rotate: -180 }}
                 whileHover={{ scale: 1, rotate: 0 }}
                 transition={{ duration: 0.4 }}
-                className="absolute top-8 right-8 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30"
+                className="absolute top-8 right-8 w-12 h-12 bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center border-2 border-white shadow-xl"
               >
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />

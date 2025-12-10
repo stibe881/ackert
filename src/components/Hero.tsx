@@ -32,7 +32,7 @@ export default function Hero() {
       </video>
 
       {/* Dark Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
 
       {/* Content */}
       <motion.div
@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.2 }}
             className="mb-6"
           >
-            <span className="inline-block px-6 py-2 bg-white/30 backdrop-blur-sm rounded-full text-sm font-body font-medium tracking-wider border border-white/40 text-white">
+            <span className="inline-block px-6 py-2 bg-black/50 backdrop-blur-md rounded-full text-sm font-body font-medium tracking-wider border-2 border-white text-white shadow-xl">
               SEIT ÜBER 20 JAHREN IHR PARTNER
             </span>
           </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
               href="#services"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-white/20 backdrop-blur-sm border-2 border-white text-white rounded-full font-body font-bold text-lg hover:bg-white/30 transition-all duration-300 shadow-lg"
+              className="px-10 py-4 bg-black/40 backdrop-blur-md border-2 border-white text-white rounded-full font-body font-bold text-lg hover:bg-black/50 transition-all duration-300 shadow-lg"
             >
               Unsere Leistungen
             </motion.a>
