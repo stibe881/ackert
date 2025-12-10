@@ -18,8 +18,19 @@ export default function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative h-screen overflow-hidden bg-gradient-to-br from-primary-green-dark via-primary-green to-primary-green-light"
+      className="relative h-screen overflow-hidden"
     >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920&auto=format&fit=crop&q=80)',
+        }}
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-green-dark/90 via-primary-green/85 to-primary-green-light/90" />
+
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
