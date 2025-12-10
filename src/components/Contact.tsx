@@ -48,7 +48,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20 text-white"
         >
-          <span className="inline-block px-6 py-2 bg-black/30 backdrop-blur-md rounded-full font-body font-semibold text-sm tracking-wider mb-6 border-2 border-white text-white shadow-xl">
+          <span className="inline-block px-6 py-2 bg-white/95 backdrop-blur-sm rounded-full font-body font-semibold text-sm tracking-wider mb-6 text-primary-green shadow-xl">
             KONTAKT
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-bold mb-8">
@@ -71,7 +71,7 @@ export default function Contact() {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-white font-body font-medium mb-2">
+                <label htmlFor="name" className="block text-white font-body font-semibold mb-2 drop-shadow-lg">
                   Name *
                 </label>
                 <input
@@ -81,13 +81,13 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-xl text-white placeholder-white/70 focus:border-white focus:bg-black/40 focus:outline-none transition-all duration-300 font-body shadow-lg"
+                  className="w-full px-6 py-4 bg-white/95 backdrop-blur-sm border-2 border-white rounded-xl text-accent-brown placeholder-accent-brown/50 focus:border-accent-orange focus:bg-white focus:outline-none transition-all duration-300 font-body shadow-xl"
                   placeholder="Ihr Name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-white font-body font-medium mb-2">
+                <label htmlFor="email" className="block text-white font-body font-semibold mb-2 drop-shadow-lg">
                   E-Mail *
                 </label>
                 <input
@@ -97,13 +97,13 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-xl text-white placeholder-white/70 focus:border-white focus:bg-black/40 focus:outline-none transition-all duration-300 font-body shadow-lg"
+                  className="w-full px-6 py-4 bg-white/95 backdrop-blur-sm border-2 border-white rounded-xl text-accent-brown placeholder-accent-brown/50 focus:border-accent-orange focus:bg-white focus:outline-none transition-all duration-300 font-body shadow-xl"
                   placeholder="ihre@email.ch"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-white font-body font-medium mb-2">
+                <label htmlFor="phone" className="block text-white font-body font-semibold mb-2 drop-shadow-lg">
                   Telefon
                 </label>
                 <input
@@ -112,13 +112,13 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-xl text-white placeholder-white/70 focus:border-white focus:bg-black/40 focus:outline-none transition-all duration-300 font-body shadow-lg"
+                  className="w-full px-6 py-4 bg-white/95 backdrop-blur-sm border-2 border-white rounded-xl text-accent-brown placeholder-accent-brown/50 focus:border-accent-orange focus:bg-white focus:outline-none transition-all duration-300 font-body shadow-xl"
                   placeholder="+41 76 123 45 67"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-white font-body font-medium mb-2">
+                <label htmlFor="message" className="block text-white font-body font-semibold mb-2 drop-shadow-lg">
                   Nachricht *
                 </label>
                 <textarea
@@ -155,17 +155,17 @@ export default function Contact() {
             className="space-y-8"
           >
             {/* Info Cards */}
-            <div className="bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-2xl p-8 shadow-xl">
+            <div className="bg-white/95 backdrop-blur-sm border-2 border-white rounded-2xl p-8 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="w-12 h-12 bg-primary-green rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">Adresse</h3>
-                  <p className="font-body text-white leading-relaxed">
+                  <h3 className="font-display text-xl font-bold text-accent-brown mb-2">Adresse</h3>
+                  <p className="font-body text-accent-brown/80 leading-relaxed">
                     Schöneggstrasse 1a<br />
                     5012 Schönenwerd<br />
                     Schweiz
@@ -174,18 +174,18 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-2xl p-8 shadow-xl">
+            <div className="bg-white/95 backdrop-blur-sm border-2 border-white rounded-2xl p-8 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="w-12 h-12 bg-primary-green rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">Telefon</h3>
+                  <h3 className="font-display text-xl font-bold text-accent-brown mb-2">Telefon</h3>
                   <a
                     href="tel:0768313242"
-                    className="font-body text-white hover:text-white/90 transition-colors duration-300 text-lg font-semibold"
+                    className="font-body text-accent-brown hover:text-primary-green transition-colors duration-300 text-lg font-semibold"
                   >
                     076 831 32 42
                   </a>
@@ -193,18 +193,18 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-black/30 backdrop-blur-md border-2 border-white/50 rounded-2xl p-8 shadow-xl">
+            <div className="bg-white/95 backdrop-blur-sm border-2 border-white rounded-2xl p-8 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="w-12 h-12 bg-primary-green rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-bold text-white mb-2">E-Mail</h3>
+                  <h3 className="font-display text-xl font-bold text-accent-brown mb-2">E-Mail</h3>
                   <a
                     href="mailto:ackertgarten@hotmail.com"
-                    className="font-body text-white hover:text-white/90 transition-colors duration-300 break-all font-semibold"
+                    className="font-body text-accent-brown hover:text-primary-green transition-colors duration-300 break-all font-semibold"
                   >
                     ackertgarten@hotmail.com
                   </a>
@@ -212,22 +212,22 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-accent-orange/30 backdrop-blur-md border-2 border-accent-orange/60 rounded-2xl p-8 shadow-xl">
-              <h3 className="font-display text-2xl font-bold text-white mb-4">
+            <div className="bg-white/95 backdrop-blur-sm border-2 border-white rounded-2xl p-8 shadow-2xl">
+              <h3 className="font-display text-2xl font-bold text-accent-brown mb-4">
                 Öffnungszeiten
               </h3>
-              <div className="space-y-2 font-body text-white">
+              <div className="space-y-2 font-body text-accent-brown/80">
                 <div className="flex justify-between">
                   <span>Montag - Freitag:</span>
-                  <span className="font-semibold">07:00 - 17:00</span>
+                  <span className="font-semibold text-accent-brown">07:00 - 17:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Samstag:</span>
-                  <span className="font-semibold">Nach Vereinbarung</span>
+                  <span className="font-semibold text-accent-brown">Nach Vereinbarung</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sonntag:</span>
-                  <span className="font-semibold">Geschlossen</span>
+                  <span className="font-semibold text-accent-brown">Geschlossen</span>
                 </div>
               </div>
             </div>
