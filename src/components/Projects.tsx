@@ -8,21 +8,25 @@ const projects = [
     title: 'Moderne Terrassenanlage',
     category: 'Landschaftsbau',
     color: 'from-primary-green to-primary-green-dark',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop',
   },
   {
     title: 'Naturnaher Hausgarten',
     category: 'Gartengestaltung',
     color: 'from-accent-orange to-accent-orange-dark',
+    image: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&auto=format&fit=crop',
   },
   {
     title: 'Pflegeleichte Vorgärten',
     category: 'Gartenpflege',
     color: 'from-primary-green-light to-primary-green',
+    image: 'https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=800&auto=format&fit=crop',
   },
   {
     title: 'Exklusive Poolanlage',
     category: 'Umgebungsarbeiten',
     color: 'from-primary-green-dark to-accent-brown',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&auto=format&fit=crop',
   },
 ]
 
@@ -67,15 +71,14 @@ export default function Projects() {
               whileHover={{ y: -12 }}
               className="group relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer"
             >
-              {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.color}`} />
-              
-              {/* Pattern Overlay */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="absolute inset-0" style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                }} />
-              </div>
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{ backgroundImage: `url(${project.image})` }}
+              />
+
+              {/* Overlay Gradient */}
+              <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-500`} />
 
               {/* Content */}
               <div className="relative h-full flex flex-col justify-end p-8 text-white">

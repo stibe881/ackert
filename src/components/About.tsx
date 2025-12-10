@@ -91,12 +91,19 @@ export default function About() {
 
             <motion.div variants={itemVariants} className="relative">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-green to-primary-green-dark opacity-20" />
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&auto=format&fit=crop)' }}
+                />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-green/80 to-primary-green-dark/80" />
+
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white p-8">
-                    <div className="text-7xl font-display font-bold mb-4">20+</div>
-                    <div className="text-xl font-body">Jahre Erfahrung</div>
-                    <div className="text-sm font-body opacity-80 mt-2">in Gartenbau</div>
+                    <div className="text-7xl font-display font-bold mb-4 drop-shadow-lg">20+</div>
+                    <div className="text-xl font-body drop-shadow-md">Jahre Erfahrung</div>
+                    <div className="text-sm font-body opacity-90 mt-2 drop-shadow-md">in Gartenbau</div>
                   </div>
                 </div>
                 {/* Decorative circles */}
