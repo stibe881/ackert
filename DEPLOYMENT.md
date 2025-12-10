@@ -8,9 +8,29 @@ Diese Anleitung beschreibt, wie du deine Next.js-Anwendung mit Apache als Revers
 
 1. **Node.js und npm installiert** (Version 18 oder höher empfohlen)
 2. **Apache2 installiert**
-3. **Erforderliche Apache-Module aktiviert**
+3. **Git installiert**
+4. **Erforderliche Apache-Module aktiviert**
 
-## Schritt 1: Apache-Module aktivieren
+## Setup: Erstmaliges Deployment
+
+### Schritt 0: Git Repository auf dem Server klonen
+
+```bash
+# SSH-Verbindung zum Server herstellen
+ssh dein-user@ackert.ch
+
+# In das Webverzeichnis wechseln
+cd /var/www/
+
+# Repository klonen (falls du GitHub/GitLab verwendest)
+# Ersetze <GIT_REPO_URL> durch deine Repository-URL
+git clone <GIT_REPO_URL> ackert.ch
+
+# ODER: Falls du kein Remote-Repository hast, Dateien hochladen:
+# Lokal: scp -r /pfad/zum/projekt/* dein-user@ackert.ch:/var/www/ackert.ch/
+```
+
+### Schritt 1: Apache-Module aktivieren
 
 Auf deinem Server folgende Befehle ausführen:
 
@@ -165,3 +185,79 @@ Falls Port 3000 bereits belegt ist, kannst du einen anderen Port verwenden:
 ```
 
 2. In der Apache-Konfiguration `localhost:3000` durch `localhost:3001` ersetzen
+
+---
+
+## Updates deployen: Änderungen auf den Server pullen
+
+Wenn du Änderungen am Code gemacht hast und diese auf den Server bringen möchtest:
+
+### Option A: Mit Git (empfohlen)
+
+**1. Lokal committen und pushen:**
+```bash
+# Auf deinem lokalen Computer
+git add .
+git commit -m "Deine Änderungen beschreiben"
+git push origin main  # oder master, je nach Branch-Name
+```
+
+**2. Auf dem Server pullen:**
+```bash
+# SSH zum Server
+ssh dein-user@ackert.ch
+
+# Zum Projekt-Verzeichnis
+cd /var/www/ackert.ch
+
+# Änderungen pullen
+git pull origin main  # oder master
+
+# Dependencies aktualisieren (falls package.json geändert wurde)
+npm install
+
+# Neu bauen
+npm run build
+
+# App neu starten
+pm2 restart ackert.ch
+```
+
+### Option B: Mit SCP (ohne Git)
+
+**Dateien vom lokalen Computer auf den Server kopieren:**
+```bash
+# Auf deinem lokalen Computer
+scp -r /pfad/zum/projekt/* dein-user@ackert.ch:/var/www/ackert.ch/
+```
+
+**Dann auf dem Server:**
+```bash
+# SSH zum Server
+ssh dein-user@ackert.ch
+
+cd /var/www/ackert.ch
+npm install
+npm run build
+pm2 restart ackert.ch
+```
+
+### Deployment-Script erstellen (optional)
+
+Du kannst dir auch ein Script erstellen, das diese Schritte automatisiert. Erstelle auf dem Server eine Datei `deploy.sh`:
+
+```bash
+#!/bin/bash
+cd /var/www/ackert.ch
+git pull origin main
+npm install
+npm run build
+pm2 restart ackert.ch
+echo "Deployment abgeschlossen!"
+```
+
+Ausführbar machen und verwenden:
+```bash
+chmod +x deploy.sh
+./deploy.sh
+```
