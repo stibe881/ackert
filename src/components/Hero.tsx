@@ -20,16 +20,26 @@ export default function Hero() {
       ref={ref}
       className="relative h-screen overflow-hidden"
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920&auto=format&fit=crop&q=80)',
-        }}
-      />
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="https://cdn.coverr.co/videos/coverr-gardening-and-landscaping-2726/1080p.mp4" type="video/mp4" />
+        {/* Fallback image if video doesn't load */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&auto=format&fit=crop&q=80)',
+          }}
+        />
+      </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-green-dark/90 via-primary-green/85 to-primary-green-light/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-primary-green-dark/70 to-primary-green/60" />
 
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">

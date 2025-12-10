@@ -124,7 +124,7 @@ export default function Projects() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <p className="font-body text-accent-brown/70 mb-6">
+          <p className="font-body text-gray-700 mb-6 text-lg">
             Möchten Sie mehr Projekte sehen oder uns persönlich kennenlernen?
           </p>
           <a
