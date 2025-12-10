@@ -48,7 +48,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20 text-white"
         >
-          <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full font-body font-semibold text-sm tracking-wider mb-6 border border-white/30">
+          <span className="inline-block px-6 py-2 bg-white/30 backdrop-blur-sm rounded-full font-body font-semibold text-sm tracking-wider mb-6 border border-white/40 text-white">
             KONTAKT
           </span>
           <h2 className="font-display text-5xl md:text-7xl font-bold mb-8">
@@ -56,7 +56,7 @@ export default function Contact() {
             <br />
             <span className="text-accent-orange">gemeinsam planen</span>
           </h2>
-          <p className="font-body text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="font-body text-lg md:text-xl text-white max-w-3xl mx-auto">
             Haben Sie Fragen oder wünschen Sie eine persönliche Beratung?
             Wir freuen uns auf Ihre Nachricht!
           </p>
@@ -81,7 +81,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl text-white placeholder-white/50 focus:border-white/50 focus:outline-none transition-all duration-300 font-body"
+                  className="w-full px-6 py-4 bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-xl text-white placeholder-white/60 focus:border-white focus:bg-white/20 focus:outline-none transition-all duration-300 font-body"
                   placeholder="Ihr Name"
                 />
               </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl text-white placeholder-white/50 focus:border-white/50 focus:outline-none transition-all duration-300 font-body"
+                  className="w-full px-6 py-4 bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-xl text-white placeholder-white/60 focus:border-white focus:bg-white/20 focus:outline-none transition-all duration-300 font-body"
                   placeholder="ihre@email.ch"
                 />
               </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-6 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl text-white placeholder-white/50 focus:border-white/50 focus:outline-none transition-all duration-300 font-body"
+                  className="w-full px-6 py-4 bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-xl text-white placeholder-white/60 focus:border-white focus:bg-white/20 focus:outline-none transition-all duration-300 font-body"
                   placeholder="+41 76 123 45 67"
                 />
               </div>
@@ -155,7 +155,7 @@ export default function Contact() {
             className="space-y-8"
           >
             {/* Info Cards */}
-            <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-8">
+            <div className="bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-2xl p-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,7 +165,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display text-xl font-bold text-white mb-2">Adresse</h3>
-                  <p className="font-body text-white/80 leading-relaxed">
+                  <p className="font-body text-white leading-relaxed">
                     Schöneggstrasse 1a<br />
                     5012 Schönenwerd<br />
                     Schweiz
@@ -174,7 +174,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-8">
+            <div className="bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-2xl p-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ export default function Contact() {
                   <h3 className="font-display text-xl font-bold text-white mb-2">Telefon</h3>
                   <a
                     href="tel:0768313242"
-                    className="font-body text-white/80 hover:text-white transition-colors duration-300 text-lg"
+                    className="font-body text-white hover:text-white/90 transition-colors duration-300 text-lg font-semibold"
                   >
                     076 831 32 42
                   </a>
@@ -193,7 +193,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-8">
+            <div className="bg-white/15 backdrop-blur-sm border-2 border-white/30 rounded-2xl p-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,7 +204,7 @@ export default function Contact() {
                   <h3 className="font-display text-xl font-bold text-white mb-2">E-Mail</h3>
                   <a
                     href="mailto:ackertgarten@hotmail.com"
-                    className="font-body text-white/80 hover:text-white transition-colors duration-300 break-all"
+                    className="font-body text-white hover:text-white/90 transition-colors duration-300 break-all font-semibold"
                   >
                     ackertgarten@hotmail.com
                   </a>
@@ -216,18 +216,18 @@ export default function Contact() {
               <h3 className="font-display text-2xl font-bold text-white mb-4">
                 Öffnungszeiten
               </h3>
-              <div className="space-y-2 font-body text-white/80">
+              <div className="space-y-2 font-body text-white">
                 <div className="flex justify-between">
                   <span>Montag - Freitag:</span>
-                  <span className="font-semibold text-white">07:00 - 17:00</span>
+                  <span className="font-semibold">07:00 - 17:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Samstag:</span>
-                  <span className="font-semibold text-white">Nach Vereinbarung</span>
+                  <span className="font-semibold">Nach Vereinbarung</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sonntag:</span>
-                  <span className="font-semibold text-white">Geschlossen</span>
+                  <span className="font-semibold">Geschlossen</span>
                 </div>
               </div>
             </div>

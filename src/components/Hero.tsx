@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.2 }}
             className="mb-6"
           >
-            <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-body font-medium tracking-wider border border-white/30">
+            <span className="inline-block px-6 py-2 bg-white/30 backdrop-blur-sm rounded-full text-sm font-body font-medium tracking-wider border border-white/40 text-white">
               SEIT ÜBER 20 JAHREN IHR PARTNER
             </span>
           </motion.div>
@@ -55,18 +55,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-none"
+            className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-none text-white drop-shadow-2xl"
           >
             Grüne Träume
             <br />
-            <span className="text-accent-orange">werden Realität</span>
+            <span className="text-accent-orange drop-shadow-2xl">werden Realität</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="font-body text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto text-white/90 leading-relaxed"
+            className="font-body text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto text-white leading-relaxed drop-shadow-lg"
           >
             Professionelle Gartengestaltung, Landschaftsbau und Gartenpflege
             in Schönenwerd und Umgebung.
@@ -93,7 +93,7 @@ export default function Hero() {
               href="#services"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-full font-body font-bold text-lg hover:bg-white/20 transition-all duration-300"
+              className="px-10 py-4 bg-white/20 backdrop-blur-sm border-2 border-white text-white rounded-full font-body font-bold text-lg hover:bg-white/30 transition-all duration-300 shadow-lg"
             >
               Unsere Leistungen
             </motion.a>
@@ -111,7 +111,7 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="flex flex-col items-center gap-2 text-white/70"
+          className="flex flex-col items-center gap-2 text-white drop-shadow-lg"
         >
           <span className="text-sm font-body tracking-wider">SCROLL</span>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
