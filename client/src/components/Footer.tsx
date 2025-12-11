@@ -1,4 +1,4 @@
-import { Leaf, MapPin, Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -14,14 +14,11 @@ export default function Footer() {
               Wir gestalten Gärten, die Geschichten erzählen. Mit Respekt vor der Natur und Liebe zum Handwerk schaffen wir Orte der Ruhe und Inspiration.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
+              <a href="https://www.instagram.com/ackert_garten/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
+              <a href="https://www.facebook.com/ackertgartenbaugmbh" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>

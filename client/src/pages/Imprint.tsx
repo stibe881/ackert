@@ -37,8 +37,8 @@ export default function Imprint() {
                 </p>
                 <p>
                   <span className="font-semibold text-[#2D241E]">E-Mail:</span>{" "}
-                  <a href="mailto:info@ackert.ch" className="text-primary hover:underline">
-                    info@ackert.ch
+                  <a href="mailto:ackertgarten@hotmail.com" className="text-primary hover:underline">
+                    ackertgarten@hotmail.com
                   </a>
                 </p>
               </div>
