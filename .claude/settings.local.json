@@ -20,7 +20,11 @@
       "Bash(python3:*)",
       "Bash(node create-favicon.js:*)",
       "Bash(npm --version:*)",
-      "Bash(npx vite build:*)"
+      "Bash(npx vite build:*)",
+      "Bash(npm run:*)",
+      "Bash(if [ -f postcss.config.js ])",
+      "Bash(then mv postcss.config.js postcss.config.cjs)",
+      "Bash(fi)"
     ],
     "deny": [],
     "ask": []
