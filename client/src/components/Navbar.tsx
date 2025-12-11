@@ -46,18 +46,18 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         {/* Logo - Full visibility, no text, larger size */}
         <Link href="/">
-          <a className="flex items-center gap-3 group">
+          <div className="flex items-center gap-3 group cursor-pointer">
             <div className={cn(
               "h-16 w-auto transition-all duration-300", // Increased height, auto width
               isScrolled ? "scale-90" : "scale-100"
             )}>
-              <img 
-                src="/images/logo.png" 
-                alt="Ackert Garten Logo" 
+              <img
+                src="/images/logo.png"
+                alt="Ackert Garten Logo"
                 className="h-full w-auto object-contain" // Maintain aspect ratio, no cropping
               />
             </div>
-          </a>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
