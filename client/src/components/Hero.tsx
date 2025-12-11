@@ -66,16 +66,28 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-600">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-primary text-white hover:bg-primary/90 font-medium text-lg px-8 h-14 rounded-full shadow-lg shadow-primary/20 transition-all hover:scale-105"
+            onClick={() => {
+              const element = document.querySelector("#contact");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Beratung vereinbaren
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <Button
+            size="lg"
+            variant="outline"
             className="border-white/30 text-white hover:bg-white/10 font-medium text-lg px-8 h-14 rounded-full backdrop-blur-sm transition-all hover:scale-105"
+            onClick={() => {
+              const element = document.querySelector("#projects");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Unsere Projekte
             <ArrowRight className="ml-2 w-5 h-5" />
