@@ -30,11 +30,29 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-lg mb-8 text-white">Navigation</h4>
             <ul className="space-y-4">
-              {["Home", "Leistungen", "Projekte", "Über uns", "Karriere"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light">
+              {[
+                { name: "Home", href: "/" },
+                { name: "Leistungen", href: "#services" },
+                { name: "Projekte", href: "#projects" },
+                { name: "Über uns", href: "/about" },
+                { name: "Karriere", href: "/career" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    onClick={(e) => {
+                      if (item.href.startsWith("#")) {
+                        e.preventDefault();
+                        const element = document.querySelector(item.href);
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }
+                    }}
+                    className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
+                  >
                     <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -47,7 +65,17 @@ export default function Footer() {
             <ul className="space-y-4">
               {["Gartengestaltung", "Landschaftsbau", "Pflanzenpflege", "Baumschnitt", "Terrassenbau"].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light">
+                  <a
+                    href="#services"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.querySelector("#services");
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
+                  >
                     <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
                     {item}
                   </a>
@@ -84,9 +112,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Ackert Garten GmbH. Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-8">
-            <a href="#" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</a>
-            <a href="#" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</a>
-            <a href="#" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">AGB</a>
+            <a href="/imprint" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</a>
+            <a href="/privacy" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</a>
+            <a href="/terms" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">AGB</a>
           </div>
         </div>
       </div>
