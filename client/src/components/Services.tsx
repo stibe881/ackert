@@ -12,7 +12,7 @@ const services = [
   {
     icon: Trees,
     title: "Landschaftsbau",
-    description: "Professionelle Erdbewegung und Strukturierung für langlebige Außenanlagen.",
+    description: "Professionelle Erdbewegung und Strukturierung für langlebige Aussenanlagen.",
     color: "text-secondary",
     bg: "bg-secondary/10",
     border: "border-secondary/20"

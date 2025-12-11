@@ -14,7 +14,7 @@ export default function Imprint() {
           <div className="prose prose-lg max-w-none">
             <section className="mb-10">
               <h2 className="font-display text-3xl font-bold text-[#2D241E] mb-4">
-                Angaben gemäß § 5 TMG
+                Angaben gemäss § 5 TMG
               </h2>
               <div className="text-[#5D4E37] space-y-2">
                 <p className="font-semibold text-[#2D241E]">Ackert Garten GmbH</p>
@@ -73,7 +73,7 @@ export default function Imprint() {
               </h2>
               <div className="text-[#5D4E37]">
                 <p>
-                  <span className="font-semibold text-[#2D241E]">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</span>
+                  <span className="font-semibold text-[#2D241E]">Umsatzsteuer-Identifikationsnummer gemäss §27 a Umsatzsteuergesetz:</span>
                   <br />
                   CHE XXX.XXX.XXX MWST
                 </p>
@@ -89,9 +89,9 @@ export default function Imprint() {
                 Haftung für Inhalte
               </h3>
               <p className="text-[#5D4E37] leading-relaxed mb-4">
-                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+                Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit,
                 Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+                Als Diensteanbieter sind wir gemäss § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
                 nach den allgemeinen Gesetzen verantwortlich.
               </p>
 
@@ -111,7 +111,7 @@ export default function Imprint() {
               <p className="text-[#5D4E37] leading-relaxed">
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
                 dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede
-                Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
+                Art der Verwertung ausserhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
                 Zustimmung des jeweiligen Autors bzw. Erstellers.
               </p>
             </section>

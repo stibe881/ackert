@@ -130,7 +130,7 @@ export default function Gartengestaltung() {
               Warum Ackert Garten?
             </h2>
             <p className="text-[#5D4037] max-w-2xl mx-auto font-light">
-              Profitieren Sie von unserer Erfahrung und Leidenschaft für außergewöhnliche Gartengestaltung
+              Profitieren Sie von unserer Erfahrung und Leidenschaft für aussergewöhnliche Gartengestaltung
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

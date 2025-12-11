@@ -160,7 +160,7 @@ export default function Terms() {
                 10. Schlussbestimmungen
               </h2>
               <p className="text-[#5D4E37] leading-relaxed mb-4">
-                10.1 Es gilt ausschließlich Schweizer Recht.
+                10.1 Es gilt ausschliesslich Schweizer Recht.
               </p>
               <p className="text-[#5D4E37] leading-relaxed mb-4">
                 10.2 Gerichtsstand ist Schönenwerd, soweit gesetzlich zulässig.

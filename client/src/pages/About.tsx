@@ -70,7 +70,7 @@ export default function About() {
                 {
                   icon: Users,
                   title: "Teamwork",
-                  description: "Gemeinsam erreichen wir außergewöhnliche Ergebnisse."
+                  description: "Gemeinsam erreichen wir aussergewöhnliche Ergebnisse."
                 },
                 {
                   icon: Heart,

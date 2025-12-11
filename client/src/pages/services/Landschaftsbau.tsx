@@ -31,7 +31,7 @@ export default function Landschaftsbau() {
     {
       icon: Trees,
       title: "Vielfalt",
-      description: "Umfassendes Leistungsspektrum für jeden Außenbereich"
+      description: "Umfassendes Leistungsspektrum für jeden Aussenbereich"
     },
     {
       icon: Award,
@@ -61,7 +61,7 @@ export default function Landschaftsbau() {
               Landschaftsbau
             </h1>
             <p className="text-xl text-[#5D4037] max-w-3xl mx-auto font-light leading-relaxed">
-              Von der Neuanlage bis zur Umgestaltung – wir schaffen beeindruckende Außenanlagen,
+              Von der Neuanlage bis zur Umgestaltung – wir schaffen beeindruckende Aussenanlagen,
               die funktional und ästhetisch überzeugen. Professioneller Landschaftsbau für Privat- und Gewerbekunden.
             </p>
           </div>
@@ -88,7 +88,7 @@ export default function Landschaftsbau() {
             <div>
               <h2 className="font-display text-4xl font-bold mb-6 text-[#2D241E]">
                 Professionelle Gestaltung<br />
-                <span className="italic text-primary">Ihrer Außenanlagen</span>
+                <span className="italic text-primary">Ihrer Aussenanlagen</span>
               </h2>
               <p className="text-[#5D4037] mb-8 leading-relaxed font-light">
                 Mit modernster Technik und traditionellem Handwerk realisieren wir anspruchsvolle
@@ -176,7 +176,7 @@ export default function Landschaftsbau() {
             Ihr Landschaftsbauprojekt wartet
           </h2>
           <p className="text-xl text-gray-300 mb-10 font-light">
-            Lassen Sie uns Ihre Außenanlagen neu gestalten.
+            Lassen Sie uns Ihre Aussenanlagen neu gestalten.
             Kontaktieren Sie uns für eine kostenlose Erstberatung.
           </p>
           <Button

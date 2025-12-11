@@ -115,7 +115,7 @@ export default function Privacy() {
                 Beschwerderecht bei der zuständigen Aufsichtsbehörde
               </h3>
               <p className="text-[#5D4E37] leading-relaxed mb-4">
-                Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+                Im Falle von Verstössen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
                 Aufsichtsbehörde zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher
                 oder gerichtlicher Rechtsbehelfe.
               </p>

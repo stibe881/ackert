@@ -14,9 +14,9 @@ export default function Pflanzenpflege() {
   };
 
   const features = [
-    "Regelmäßige Kontrolle und Pflege Ihrer Pflanzen",
+    "Regelmässige Kontrolle und Pflege Ihrer Pflanzen",
     "Bedarfsgerechte Düngung und Bewässerung",
-    "Schnittmaßnahmen für gesundes Wachstum",
+    "Schnittmassnahmen für gesundes Wachstum",
     "Unkrautbekämpfung und Bodenpflege",
     "Krankheits- und Schädlingsmanagement",
     "Saisonale Pflanzarbeiten und Umgestaltung"
@@ -177,7 +177,7 @@ export default function Pflanzenpflege() {
           </h2>
           <p className="text-xl text-gray-300 mb-10 font-light">
             Lassen Sie uns gemeinsam für gesunde und prächtige Pflanzen sorgen.
-            Kontaktieren Sie uns für ein Pflegekonzept nach Maß.
+            Kontaktieren Sie uns für ein Pflegekonzept nach Mass.
           </p>
           <Button
             size="lg"

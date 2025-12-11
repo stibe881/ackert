@@ -18,7 +18,7 @@ export default function Terrassenbau() {
     "Hochwertige Materialien: Holz, Stein, WPC",
     "Unterkonstruktion und Drainage-Systeme",
     "Integrierte Beleuchtung und Beschattung",
-    "Sichtschutz und Geländer nach Maß",
+    "Sichtschutz und Geländer nach Mass",
     "Barrierefreie Ausführung möglich"
   ];
 
@@ -26,17 +26,17 @@ export default function Terrassenbau() {
     {
       icon: Home,
       title: "Wohnraumerweiterung",
-      description: "Erweitern Sie Ihren Lebensraum nach draußen"
+      description: "Erweitern Sie Ihren Lebensraum nach draussen"
     },
     {
       icon: Layers,
       title: "Materialvielfalt",
-      description: "Große Auswahl an edlen Belägen und Designs"
+      description: "Grosse Auswahl an edlen Belägen und Designs"
     },
     {
       icon: Sparkles,
       title: "Einzigartig",
-      description: "Maßgeschneiderte Lösungen für Ihr Zuhause"
+      description: "Massgeschneiderte Lösungen für Ihr Zuhause"
     },
     {
       icon: Target,
