@@ -12,7 +12,13 @@
       "Bash(git branch:*)",
       "Bash(git reset:*)",
       "Bash(ssh:*)",
-      "Bash(git remote set-url:*)"
+      "Bash(git remote set-url:*)",
+      "Bash(cat:*)",
+      "Bash(md5sum:*)",
+      "Bash(npx vite build)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(node create-favicon.js:*)"
     ],
     "deny": [],
     "ask": []
