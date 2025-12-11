@@ -69,13 +69,9 @@ export default function Landschaftsbau() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/landscaping-hero.jpg"
+              src="/images/Landschaftsbau_2.jpeg"
               alt="Landschaftsbau"
               className="w-full h-[400px] object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = "/images/hero-bg.jpg";
-              }}
             />
           </div>
         </div>
@@ -109,24 +105,16 @@ export default function Landschaftsbau() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/landscape-work-1.jpg"
+                  src="/images/Landschaftsbau_1.jpeg"
                   alt="Landschaftsbauarbeiten"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-3.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/landscape-work-2.jpg"
+                  src="/images/Landschaftsbau_3.jpeg"
                   alt="Natursteinarbeiten"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-4.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>
