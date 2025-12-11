@@ -107,14 +107,14 @@ export default function Gartengestaltung() {
                 <img
                   src="/images/Gartengestaltung_2.jpeg"
                   alt="Gartenplanung"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="/images/Gartengestaltung_1.jpeg"
                   alt="Gartendesign"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>
