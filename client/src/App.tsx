@@ -10,6 +10,11 @@ import Career from "./pages/Career";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Gartengestaltung from "./pages/services/Gartengestaltung";
+import Landschaftsbau from "./pages/services/Landschaftsbau";
+import Pflanzenpflege from "./pages/services/Pflanzenpflege";
+import Baumschnitt from "./pages/services/Baumschnitt";
+import Terrassenbau from "./pages/services/Terrassenbau";
 
 
 function Router() {
@@ -21,6 +26,11 @@ function Router() {
       <Route path={"/imprint"} component={Imprint} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
+      <Route path={"/services/gartengestaltung"} component={Gartengestaltung} />
+      <Route path={"/services/landschaftsbau"} component={Landschaftsbau} />
+      <Route path={"/services/pflanzenpflege"} component={Pflanzenpflege} />
+      <Route path={"/services/baumschnitt"} component={Baumschnitt} />
+      <Route path={"/services/terrassenbau"} component={Terrassenbau} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

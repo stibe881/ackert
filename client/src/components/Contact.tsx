@@ -52,7 +52,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Schreiben Sie uns</h4>
-                    <p className="text-gray-300 text-sm font-light">info@ackert.ch</p>
+                    <p className="text-gray-300 text-sm font-light">ackertgarten@hotmail.com</p>
                   </div>
                 </div>
               </div>

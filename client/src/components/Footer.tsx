@@ -63,21 +63,20 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-lg mb-8 text-white">Leistungen</h4>
             <ul className="space-y-4">
-              {["Gartengestaltung", "Landschaftsbau", "Pflanzenpflege", "Baumschnitt", "Terrassenbau"].map((item) => (
-                <li key={item}>
+              {[
+                { name: "Gartengestaltung", href: "/services/gartengestaltung" },
+                { name: "Landschaftsbau", href: "/services/landschaftsbau" },
+                { name: "Pflanzenpflege", href: "/services/pflanzenpflege" },
+                { name: "Baumschnitt", href: "/services/baumschnitt" },
+                { name: "Terrassenbau", href: "/services/terrassenbau" }
+              ].map((item) => (
+                <li key={item.name}>
                   <a
-                    href="#services"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const element = document.querySelector("#services");
-                      if (element) {
-                        element.scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
+                    href={item.href}
                     className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
                   >
                     <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -101,7 +100,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-4 group">
                 <Mail className="w-5 h-5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">info@ackert.ch</span>
+                <span className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">ackertgarten@hotmail.com</span>
               </li>
             </ul>
           </div>
