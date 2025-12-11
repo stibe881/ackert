@@ -69,13 +69,9 @@ export default function Gartengestaltung() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/garden-design-hero.jpg"
+              src="/images/Gartengestaltung_3.jpeg"
               alt="Gartengestaltung"
               className="w-full h-[400px] object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = "/images/hero-bg.jpg";
-              }}
             />
           </div>
         </div>
@@ -109,24 +105,16 @@ export default function Gartengestaltung() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/garden-plan-1.jpg"
+                  src="/images/Gartengestaltung_2.jpeg"
                   alt="Gartenplanung"
                   className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-1.jpg";
-                  }}
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
                 <img
-                  src="/images/garden-plan-2.jpg"
+                  src="/images/Gartengestaltung_1.jpeg"
                   alt="Gartendesign"
                   className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-2.jpg";
-                  }}
                 />
               </div>
             </div>
