@@ -50,7 +50,7 @@ export default function Navbar() {
               isScrolled ? "scale-90" : "scale-100"
             )}>
               <img 
-                src="/images/logo-rounded.png" 
+                src="/images/logo.png" 
                 alt="Ackert Garten Logo" 
                 className="h-full w-auto object-contain" // Maintain aspect ratio, no cropping
               />

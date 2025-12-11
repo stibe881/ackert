@@ -8,17 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-8">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full border border-white/10">
-                <img src="/images/logo-rounded.png" alt="Ackert Garten Logo" className="w-full h-full object-cover rounded-full" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-xl tracking-tight leading-none">
-                  ACKERT
-                </span>
-                <span className="text-[10px] text-white/60 tracking-[0.2em] uppercase font-bold mt-1">
-                  Garten GmbH
-                </span>
-              </div>
+              <img src="/images/logo.png" alt="Ackert Garten Logo" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-[#D7CCC8] text-sm leading-relaxed font-light max-w-xs">
               Wir gestalten Gärten, die Geschichten erzählen. Mit Respekt vor der Natur und Liebe zum Handwerk schaffen wir Orte der Ruhe und Inspiration.
