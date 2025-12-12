@@ -86,9 +86,9 @@ export default function Footer() {
               Realisation: Gross ICT
             </a>
             <span className="text-[#D7CCC8]/60 text-xs">•</span>
-            <a href="/imprint" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</a>
-            <a href="/privacy" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</a>
-            <a href="/terms" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">AGB</a>
+            <Link href="/imprint" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</Link>
+            <Link href="/privacy" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</Link>
+            <Link href="/terms" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">AGB</Link>
           </div>
         </div>
       </div>
