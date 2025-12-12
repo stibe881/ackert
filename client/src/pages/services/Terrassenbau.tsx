@@ -74,13 +74,9 @@ export default function Terrassenbau() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/terrace-hero.jpg"
+              src="/images/Terrassenbau_1.jpg"
               alt="Terrassenbau"
               className="w-full h-[400px] object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = "/images/hero-bg.jpg";
-              }}
             />
           </div>
         </div>
@@ -114,24 +110,16 @@ export default function Terrassenbau() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/terrace-work-1.jpg"
+                  src="/images/Terrassenbau_2.jpg"
                   alt="Terrassenbau Detail"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-1.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/terrace-work-2.jpg"
+                  src="/images/Terrassenbau_3.jpg"
                   alt="Fertige Terrasse"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-2.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>
