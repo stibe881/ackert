@@ -61,30 +61,51 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={(e) => {
-                if (link.href.startsWith("#")) {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                }
-              }}
-              className={cn(
-                "text-sm font-medium transition-colors relative group py-2",
-                location === "/"
-                  ? (isScrolled ? "text-[#5D4037] hover:text-primary" : "text-white/90 hover:text-white")
-                  : "text-[#5D4037] hover:text-primary"
-              )}
-            >
-              {link.name}
-              <span className={cn(
-                "absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
-                location === "/" ? (isScrolled ? "bg-primary" : "bg-white") : "bg-primary"
-              )} />
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            if (link.href.startsWith("#")) {
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.href);
+                  }}
+                  className={cn(
+                    "text-sm font-medium transition-colors relative group py-2",
+                    location === "/"
+                      ? (isScrolled ? "text-[#5D4037] hover:text-primary" : "text-white/90 hover:text-white")
+                      : "text-[#5D4037] hover:text-primary"
+                  )}
+                >
+                  {link.name}
+                  <span className={cn(
+                    "absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
+                    location === "/" ? (isScrolled ? "bg-primary" : "bg-white") : "bg-primary"
+                  )} />
+                </a>
+              );
+            } else {
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors relative group py-2",
+                    location === "/"
+                      ? (isScrolled ? "text-[#5D4037] hover:text-primary" : "text-white/90 hover:text-white")
+                      : "text-[#5D4037] hover:text-primary"
+                  )}
+                >
+                  {link.name}
+                  <span className={cn(
+                    "absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
+                    location === "/" ? (isScrolled ? "bg-primary" : "bg-white") : "bg-primary"
+                  )} />
+                </Link>
+              );
+            }
+          })}
           <Button 
             variant="default" 
             className={cn(
@@ -111,21 +132,34 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-[#FDFBF7] border-b border-[#5D4037]/10 p-6 md:hidden flex flex-col gap-6 animate-in slide-in-from-top-5 shadow-xl">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={(e) => {
-                if (link.href.startsWith("#")) {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                }
-              }}
-              className="text-xl font-display font-bold text-[#2D241E] hover:text-primary"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            if (link.href.startsWith("#")) {
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.href);
+                  }}
+                  className="text-xl font-display font-bold text-[#2D241E] hover:text-primary"
+                >
+                  {link.name}
+                </a>
+              );
+            } else {
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-xl font-display font-bold text-[#2D241E] hover:text-primary"
+                >
+                  {link.name}
+                </Link>
+              );
+            }
+          })}
           <Button 
             className="w-full bg-primary text-white font-bold rounded-full h-12"
             onClick={() => scrollToSection("#contact")}

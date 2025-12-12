@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#2D241E] text-[#FDFBF7] pt-24 pb-12 relative overflow-hidden">
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
           {/* Brand */}
           <div className="space-y-8">
             <div className="flex items-center gap-3">
@@ -22,49 +22,6 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
-          </div>
-
-          {/* Links */}
-          <div>
-            <h4 className="font-display font-bold text-lg mb-8 text-white">Navigation</h4>
-            <ul className="space-y-4">
-              {[
-                { name: "Home", href: "/" },
-                { name: "Leistungen", href: "#services" },
-                { name: "Projekte", href: "#projects" },
-                { name: "Über uns", href: "/about" },
-                { name: "Karriere", href: "/career" }
-              ].map((item) => (
-                <li key={item.name}>
-                  {item.href.startsWith("#") ? (
-                    <a
-                      href={item.href}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const element = document.querySelector(item.href);
-                        if (element) {
-                          element.scrollIntoView({ behavior: "smooth" });
-                        } else {
-                          window.location.href = "/" + item.href;
-                        }
-                      }}
-                      className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
-                      {item.name}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Services */}
