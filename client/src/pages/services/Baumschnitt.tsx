@@ -74,7 +74,7 @@ export default function Baumschnitt() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/baumschnitt_3.avif"
+              src="/images/baumschnitt_3.avif?v=2"
               alt="Baumschnitt"
               className="w-full h-[400px] object-cover"
             />
@@ -110,14 +110,14 @@ export default function Baumschnitt() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/baumschnitt_1.jpg"
+                  src="/images/baumschnitt_1.jpg?v=2"
                   alt="Baumschnittarbeiten"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/baumschnitt_2.webp"
+                  src="/images/baumschnitt_2.webp?v=2"
                   alt="Professionell geschnittene Bäume"
                   className="w-full h-64 object-cover"
                 />
