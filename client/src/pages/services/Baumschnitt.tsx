@@ -74,13 +74,9 @@ export default function Baumschnitt() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/tree-pruning-hero.jpg"
+              src="https://images.unsplash.com/photo-1542601098-3adb3b0be4f5?auto=format&fit=crop&q=80"
               alt="Baumschnitt"
               className="w-full h-[400px] object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = "/images/hero-bg.jpg";
-              }}
             />
           </div>
         </div>
@@ -114,24 +110,16 @@ export default function Baumschnitt() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/tree-work-1.jpg"
+                  src="https://images.unsplash.com/photo-1614727187346-ec3a009092b0?auto=format&fit=crop&q=80"
                   alt="Baumschnittarbeiten"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-3.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
                 <img
-                  src="/images/tree-work-2.jpg"
+                  src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&q=80"
                   alt="Kronenpflege"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-4.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>

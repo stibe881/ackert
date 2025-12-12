@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -35,22 +36,32 @@ export default function Footer() {
                 { name: "Karriere", href: "/career" }
               ].map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
-                    onClick={(e) => {
-                      if (item.href.startsWith("#")) {
+                  {item.href.startsWith("#") ? (
+                    <a
+                      href={item.href}
+                      onClick={(e) => {
                         e.preventDefault();
                         const element = document.querySelector(item.href);
                         if (element) {
                           element.scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          window.location.href = "/" + item.href;
                         }
-                      }
-                    }}
-                    className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
-                    {item.name}
-                  </a>
+                      }}
+                      className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -69,13 +80,13 @@ export default function Footer() {
                 { name: "Rollrasen", href: "/services/rollrasen" }
               ].map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-[#D7CCC8] hover:text-primary transition-colors text-sm flex items-center gap-3 group font-light"
                   >
                     <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-primary transition-colors" />
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

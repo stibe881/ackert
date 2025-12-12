@@ -74,13 +74,9 @@ export default function Pflanzenpflege() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="/images/plant-care-hero.jpg"
+              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&q=80"
               alt="Pflanzenpflege"
               className="w-full h-[400px] object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = "/images/hero-bg.jpg";
-              }}
             />
           </div>
         </div>
@@ -114,24 +110,16 @@ export default function Pflanzenpflege() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/plant-care-1.jpg"
+                  src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80"
                   alt="Pflanzenpflege Detail"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-1.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
                 <img
-                  src="/images/plant-care-2.jpg"
+                  src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80"
                   alt="Gesunde Pflanzen"
-                  className="w-full h-48 object-cover"
-                  onError={(e) => {
-                    const img = e.target as HTMLImageElement;
-                    img.src = "/images/project-2.jpg";
-                  }}
+                  className="w-full h-64 object-cover"
                 />
               </div>
             </div>
