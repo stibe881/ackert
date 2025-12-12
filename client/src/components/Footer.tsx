@@ -65,7 +65,8 @@ export default function Footer() {
                 { name: "Landschaftsbau", href: "/services/landschaftsbau" },
                 { name: "Pflanzenpflege", href: "/services/pflanzenpflege" },
                 { name: "Baumschnitt", href: "/services/baumschnitt" },
-                { name: "Terrassenbau", href: "/services/terrassenbau" }
+                { name: "Terrassenbau", href: "/services/terrassenbau" },
+                { name: "Rollrasen", href: "/services/rollrasen" }
               ].map((item) => (
                 <li key={item.name}>
                   <a

@@ -2,8 +2,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Leaf, Clock, ThumbsUp, Sprout } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Rollrasen() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const scrollToContact = () => {
     const element = document.querySelector("#contact");
     if (element) {
@@ -14,7 +19,7 @@ export default function Rollrasen() {
   };
 
   const features = [
-    "Hochwertige Rollrasenqualität aus professioneller Anzucht",
+    "Premium Schweizer Rollrasen aus regionaler Anzucht",
     "Fachgerechte Bodenvorbereitung und Untergrundprüfung",
     "Präzise Verlegung für ein perfektes Ergebnis",
     "Sofort grüne und nutzbare Rasenflächen",
@@ -58,11 +63,11 @@ export default function Rollrasen() {
               Leistungen
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-[#2D241E]">
-              Rollrasen
+              Schweizer Rollrasen
             </h1>
             <p className="text-xl text-[#5D4037] max-w-3xl mx-auto font-light leading-relaxed">
-              Verwandeln Sie kahle Flächen in sattes Grün – mit professionellem Rollrasen.
-              Sofort nutzbar, dicht bewachsen und perfekt verlegt für ein natürliches Ergebnis.
+              Verwandeln Sie kahle Flächen in sattes Grün – mit Premium Schweizer Rollrasen.
+              Regional angebaut, sofort nutzbar und perfekt an unser Klima angepasst.
             </p>
           </div>
 
@@ -83,13 +88,13 @@ export default function Rollrasen() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="font-display text-4xl font-bold mb-6 text-[#2D241E]">
-                Perfekter Rasen –<br />
-                <span className="italic text-primary">in kürzester Zeit</span>
+                Schweizer Qualität –<br />
+                <span className="italic text-primary">sofort grün</span>
               </h2>
               <p className="text-[#5D4037] mb-8 leading-relaxed font-light">
-                Mit hochwertigem Rollrasen schaffen wir sofort grüne, dichte Rasenflächen,
-                die nach nur wenigen Wochen voll belastbar sind. Von der Bodenvorbereitung
-                bis zur Fertigstellung – wir sorgen für ein makelloses Ergebnis.
+                Mit Premium Schweizer Rollrasen schaffen wir sofort grüne, dichte Rasenflächen,
+                die optimal an unser Klima angepasst sind. Regional angebaut und frisch verlegt –
+                von der Bodenvorbereitung bis zur Fertigstellung sorgen wir für ein makelloses Ergebnis.
               </p>
               <ul className="space-y-4">
                 {features.map((feature, index) => (
@@ -127,7 +132,7 @@ export default function Rollrasen() {
         <div className="container max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold mb-4 text-[#2D241E]">
-              Warum Ackert Garten?
+              Warum Ackert Garten GmbH?
             </h2>
             <p className="text-[#5D4037] max-w-2xl mx-auto font-light">
               Professionelle Rollrasenverlegung mit Qualitätsgarantie

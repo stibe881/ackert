@@ -2,8 +2,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Trees, Hammer, Award, Shield } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Landschaftsbau() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const scrollToContact = () => {
     const element = document.querySelector("#contact");
     if (element) {
@@ -127,7 +132,7 @@ export default function Landschaftsbau() {
         <div className="container max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold mb-4 text-[#2D241E]">
-              Warum Ackert Garten?
+              Warum Ackert Garten GmbH?
             </h2>
             <p className="text-[#5D4037] max-w-2xl mx-auto font-light">
               Erfahrung und Kompetenz für anspruchsvolle Landschaftsbauprojekte
