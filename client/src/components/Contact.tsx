@@ -32,7 +32,14 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Besuchen Sie uns</h4>
-                    <p className="text-gray-300 text-sm font-light">Schöneggstrasse 1a<br />5012 Schönenwerd</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Schöneggstrasse+1a,+5012+Schönenwerd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 text-sm font-light hover:text-white transition-colors block"
+                    >
+                      Schöneggstrasse 1a<br />5012 Schönenwerd
+                    </a>
                   </div>
                 </div>
                 
@@ -42,7 +49,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Rufen Sie an</h4>
-                    <p className="text-gray-300 text-sm font-light">076 831 32 42</p>
+                    <a href="tel:+41768313242" className="text-gray-300 text-sm font-light hover:text-white transition-colors">076 831 32 42</a>
                   </div>
                 </div>
 
@@ -52,7 +59,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Schreiben Sie uns</h4>
-                    <p className="text-gray-300 text-sm font-light">ackertgarten@hotmail.com</p>
+                    <a href="mailto:ackertgarten@hotmail.com" className="text-gray-300 text-sm font-light hover:text-white transition-colors">ackertgarten@hotmail.com</a>
                   </div>
                 </div>
               </div>

@@ -37,13 +37,9 @@ export default function About() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/team-placeholder.jpg"
-                alt="Unser Team"
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&q=80"
+                alt="Gartenbau Arbeit"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80";
-                }}
               />
             </div>
           </div>
@@ -102,19 +98,19 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Max Ackert",
+                name: "Erdzan Kalac",
                 role: "Geschäftsführer",
-                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
               },
               {
-                name: "Sarah Müller",
-                role: "Gartenarchitektin",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                name: "Mitarbeiter",
+                role: "Landschaftsgärtner",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80"
               },
               {
-                name: "Thomas Weber",
-                role: "Bauleiter",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+                name: "Mitarbeiter",
+                role: "Gartengestalter",
+                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80"
               }
             ].map((member, index) => (
               <div key={index} className="group">

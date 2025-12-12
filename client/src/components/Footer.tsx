@@ -87,18 +87,23 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4 group">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                <span className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Schöneggstrasse+1a,+5012+Schönenwerd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors"
+                >
                   Schöneggstrasse 1a<br />
                   5012 Schönenwerd
-                </span>
+                </a>
               </li>
               <li className="flex items-center gap-4 group">
                 <Phone className="w-5 h-5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">076 831 32 42</span>
+                <a href="tel:+41768313242" className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">076 831 32 42</a>
               </li>
               <li className="flex items-center gap-4 group">
                 <Mail className="w-5 h-5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">ackertgarten@hotmail.com</span>
+                <a href="mailto:ackertgarten@hotmail.com" className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors">ackertgarten@hotmail.com</a>
               </li>
             </ul>
           </div>
@@ -108,7 +113,11 @@ export default function Footer() {
           <p className="text-[#D7CCC8]/60 text-xs font-light">
             © {new Date().getFullYear()} Ackert Garten GmbH. Alle Rechte vorbehalten.
           </p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+            <a href="https://gross-ict.ch" target="_blank" rel="noopener noreferrer" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">
+              Realisation: Gross ICT
+            </a>
+            <span className="text-[#D7CCC8]/60 text-xs">•</span>
             <a href="/imprint" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</a>
             <a href="/privacy" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</a>
             <a href="/terms" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">AGB</a>

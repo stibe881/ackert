@@ -19,7 +19,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Leistungen", href: "#services" },
     { name: "Projekte", href: "#projects" },
     { name: "Über uns", href: "/about" },
     { name: "Karriere", href: "/career" },
@@ -74,13 +73,15 @@ export default function Navbar() {
               }}
               className={cn(
                 "text-sm font-medium transition-colors relative group py-2",
-                isScrolled ? "text-[#5D4037] hover:text-primary" : "text-white/90 hover:text-white"
+                location === "/"
+                  ? (isScrolled ? "text-[#5D4037] hover:text-primary" : "text-white/90 hover:text-white")
+                  : "text-[#5D4037] hover:text-primary"
               )}
             >
               {link.name}
               <span className={cn(
                 "absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
-                isScrolled ? "bg-primary" : "bg-white"
+                location === "/" ? (isScrolled ? "bg-primary" : "bg-white") : "bg-primary"
               )} />
             </a>
           ))}
