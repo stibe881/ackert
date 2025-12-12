@@ -115,7 +115,7 @@ export default function Pflanzenpflege() {
                   className="w-full h-64 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80"
                   alt="Gesunde Pflanzen"

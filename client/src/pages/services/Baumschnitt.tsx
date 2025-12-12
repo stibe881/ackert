@@ -74,7 +74,7 @@ export default function Baumschnitt() {
           {/* Hero Image */}
           <div className="rounded-3xl overflow-hidden shadow-2xl mb-16">
             <img
-              src="https://images.unsplash.com/photo-1542601098-3adb3b0be4f5?auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&q=80"
               alt="Baumschnitt"
               className="w-full h-[400px] object-cover"
             />
@@ -110,15 +110,15 @@ export default function Baumschnitt() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1614727187346-ec3a009092b0?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80"
                   alt="Baumschnittarbeiten"
                   className="w-full h-64 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&q=80"
-                  alt="Kronenpflege"
+                  src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?auto=format&fit=crop&q=80"
+                  alt="Professionell geschnittene Bäume"
                   className="w-full h-64 object-cover"
                 />
               </div>
