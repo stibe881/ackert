@@ -110,14 +110,14 @@ export default function Baumschnitt() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1614956036296-874b0f5ba69c?auto=format&fit=crop&q=80"
                   alt="Baumschnittarbeiten"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1595508064774-5ff825ff0f81?auto=format&fit=crop&q=80"
                   alt="Professionell geschnittene Bäume"
                   className="w-full h-64 object-cover"
                 />
