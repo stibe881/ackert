@@ -1,4 +1,5 @@
-import { Sprout, Trees, Shovel, Ruler, Flower2 } from "lucide-react";
+import { Sprout, Trees, Shovel, Ruler, Flower2, Grass } from "lucide-react";
+import { Link } from "wouter";
 
 const services = [
   {
@@ -7,7 +8,8 @@ const services = [
     description: "Individuelle Konzepte, die den Charakter Ihres Grundstücks unterstreichen.",
     color: "text-primary",
     bg: "bg-primary/10",
-    border: "border-primary/20"
+    border: "border-primary/20",
+    href: "/services/gartengestaltung"
   },
   {
     icon: Trees,
@@ -15,7 +17,8 @@ const services = [
     description: "Professionelle Erdbewegung und Strukturierung für langlebige Aussenanlagen.",
     color: "text-secondary",
     bg: "bg-secondary/10",
-    border: "border-secondary/20"
+    border: "border-secondary/20",
+    href: "/services/landschaftsbau"
   },
   {
     icon: Flower2,
@@ -23,7 +26,8 @@ const services = [
     description: "Fachgerechte Pflege für blühende Gärten zu jeder Jahreszeit.",
     color: "text-green-600",
     bg: "bg-green-600/10",
-    border: "border-green-600/20"
+    border: "border-green-600/20",
+    href: "/services/pflanzenpflege"
   },
   {
     icon: Shovel,
@@ -31,7 +35,8 @@ const services = [
     description: "Hochwertige Holz- und Steindecks als Erweiterung Ihres Wohnraums.",
     color: "text-orange-600",
     bg: "bg-orange-600/10",
-    border: "border-orange-600/20"
+    border: "border-orange-600/20",
+    href: "/services/terrassenbau"
   },
   {
     icon: Ruler,
@@ -39,7 +44,17 @@ const services = [
     description: "Erhaltungsschnitt für die Gesundheit und Sicherheit Ihrer Bäume.",
     color: "text-emerald-600",
     bg: "bg-emerald-600/10",
-    border: "border-emerald-600/20"
+    border: "border-emerald-600/20",
+    href: "/services/baumschnitt"
+  },
+  {
+    icon: Grass,
+    title: "Rollrasen",
+    description: "Sofort grüne Rasenflächen mit hochwertiger Qualität und professioneller Verlegung.",
+    color: "text-lime-600",
+    bg: "bg-lime-600/10",
+    border: "border-lime-600/20",
+    href: "/services/rollrasen"
   }
 ];
 
@@ -63,9 +78,10 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <Link
               key={index}
-              className="group relative h-80 perspective-1000"
+              href={service.href}
+              className="group relative h-80 perspective-1000 cursor-pointer"
             >
               <div className={`
                 absolute inset-0 bg-white rounded-2xl p-8 flex flex-col justify-between
@@ -94,7 +110,7 @@ export default function Services() {
                 {/* Decorative Line */}
                 <div className="w-12 h-1 bg-[#5D4037]/10 rounded-full mt-4 group-hover:w-full group-hover:bg-primary/20 transition-all duration-500" />
               </div>
-            </div>
+            </Link>
           ))}
           
           {/* Visual Element Card */}

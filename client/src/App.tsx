@@ -15,6 +15,7 @@ import Landschaftsbau from "./pages/services/Landschaftsbau";
 import Pflanzenpflege from "./pages/services/Pflanzenpflege";
 import Baumschnitt from "./pages/services/Baumschnitt";
 import Terrassenbau from "./pages/services/Terrassenbau";
+import Rollrasen from "./pages/services/Rollrasen";
 
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path={"/services/pflanzenpflege"} component={Pflanzenpflege} />
       <Route path={"/services/baumschnitt"} component={Baumschnitt} />
       <Route path={"/services/terrassenbau"} component={Terrassenbau} />
+      <Route path={"/services/rollrasen"} component={Rollrasen} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
