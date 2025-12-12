@@ -2,8 +2,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Briefcase, GraduationCap, TrendingUp, Users } from "lucide-react";
+import { useState } from "react";
+import ApplicationForm from "@/components/ApplicationForm";
 
 export default function Career() {
+  const [showApplicationForm, setShowApplicationForm] = useState(false);
+  const [selectedPosition, setSelectedPosition] = useState("");
+
   return (
     <div className="min-h-screen bg-[#FDFBF7] text-foreground selection:bg-primary selection:text-primary-foreground overflow-x-hidden">
       <Navbar />
@@ -71,22 +76,10 @@ export default function Career() {
           <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
-                title: "Landschaftsgärtner (m/w/d)",
-                type: "Vollzeit",
+                title: "Spontanbewerbung",
+                type: "Alle Positionen",
                 location: "Schönenwerd",
-                description: "Wir suchen einen erfahrenen Landschaftsgärtner für vielfältige Gartenprojekte."
-              },
-              {
-                title: "Gartenarchitekt (m/w/d)",
-                type: "Vollzeit",
-                location: "Schönenwerd",
-                description: "Gestalte kreative Gartenkonzepte und begleite Projekte von der Planung bis zur Umsetzung."
-              },
-              {
-                title: "Lernende/r Landschaftsgärtner/in EFZ",
-                type: "Lehrstelle",
-                location: "Schönenwerd",
-                description: "Starte deine Karriere im Gartenbau mit einer fundierten Ausbildung bei uns."
+                description: "Sie möchten Teil unseres Teams werden? Wir freuen uns über Ihre Bewerbung und prüfen gerne, welche Position am besten zu Ihnen passt."
               }
             ].map((job, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
@@ -106,7 +99,13 @@ export default function Career() {
                       </span>
                     </div>
                   </div>
-                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-8">
+                  <Button
+                    className="bg-primary text-white hover:bg-primary/90 rounded-full px-8"
+                    onClick={() => {
+                      setSelectedPosition(job.title);
+                      setShowApplicationForm(true);
+                    }}
+                  >
                     Bewerben
                   </Button>
                 </div>
@@ -122,22 +121,32 @@ export default function Career() {
         <section className="bg-[#2D241E] py-20 -mx-4">
           <div className="container text-center">
             <h2 className="font-display text-4xl font-bold text-white mb-6">
-              Keine passende Stelle dabei?
+              Werde Teil unseres Teams
             </h2>
             <p className="text-[#D7CCC8] text-lg font-light mb-8 max-w-2xl mx-auto">
-              Wir freuen uns über Initiativbewerbungen von motivierten Menschen,
+              Wir freuen uns über Bewerbungen von motivierten Menschen,
               die ihre Leidenschaft für Gartenbau mit uns teilen möchten.
             </p>
             <Button
               className="bg-primary text-white hover:bg-primary/90 rounded-full px-10 py-6 text-lg"
-              onClick={() => window.location.href = 'mailto:jobs@ackert.ch'}
+              onClick={() => {
+                setSelectedPosition("Spontanbewerbung");
+                setShowApplicationForm(true);
+              }}
             >
-              Initiativbewerbung senden
+              Jetzt bewerben
             </Button>
           </div>
         </section>
       </main>
       <Footer />
+
+      {showApplicationForm && (
+        <ApplicationForm
+          position={selectedPosition}
+          onClose={() => setShowApplicationForm(false)}
+        />
+      )}
     </div>
   );
 }
