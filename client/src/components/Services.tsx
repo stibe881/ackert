@@ -1,4 +1,4 @@
-import { Sprout, Trees, Shovel, Ruler, Flower2, Grass } from "lucide-react";
+import { Sprout, Trees, Shovel, Ruler, Flower2, Leaf } from "lucide-react";
 import { Link } from "wouter";
 
 const services = [
@@ -48,7 +48,7 @@ const services = [
     href: "/services/baumschnitt"
   },
   {
-    icon: Grass,
+    icon: Leaf,
     title: "Rollrasen",
     description: "Sofort grüne Rasenflächen mit hochwertiger Qualität und professioneller Verlegung.",
     color: "text-lime-600",

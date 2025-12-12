@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Grass, Clock, ThumbsUp, Sprout } from "lucide-react";
+import { Check, Leaf, Clock, ThumbsUp, Sprout } from "lucide-react";
 
 export default function Rollrasen() {
   const scrollToContact = () => {
@@ -29,7 +29,7 @@ export default function Rollrasen() {
       description: "Innerhalb weniger Stunden zur perfekten Rasenfläche"
     },
     {
-      icon: Grass,
+      icon: Leaf,
       title: "Premium-Qualität",
       description: "Dichte, robuste Grasnarbe für langanhaltende Freude"
     },
