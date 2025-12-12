@@ -110,14 +110,14 @@ export default function Rollrasen() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/Rollrasen_2.jpeg"
+                  src="/images/Rollrasen_2.jpg"
                   alt="Rollrasen Verlegung"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/Rollrasen_3.jpeg"
+                  src="/images/Rollrasen_3.jpg"
                   alt="Fertiger Rollrasen"
                   className="w-full h-64 object-cover"
                 />

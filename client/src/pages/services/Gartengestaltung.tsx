@@ -20,7 +20,6 @@ export default function Gartengestaltung() {
 
   const features = [
     "Individuelle Gartenplanung nach Ihren Wünschen",
-    "3D-Visualisierung Ihres zukünftigen Gartens",
     "Berücksichtigung von Standort und Bodenverhältnissen",
     "Nachhaltige und pflegeleichte Pflanzkonzepte",
     "Harmonische Integration von Wegen und Plätzen",
