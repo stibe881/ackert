@@ -21,33 +21,6 @@ const services = [
     href: "/services/landschaftsbau"
   },
   {
-    icon: Flower2,
-    title: "Pflanzenpflege",
-    description: "Fachgerechte Pflege für blühende Gärten zu jeder Jahreszeit.",
-    color: "text-green-600",
-    bg: "bg-green-600/10",
-    border: "border-green-600/20",
-    href: "/services/pflanzenpflege"
-  },
-  {
-    icon: Shovel,
-    title: "Terrassenbau",
-    description: "Hochwertige Holz- und Steindecks als Erweiterung Ihres Wohnraums.",
-    color: "text-orange-600",
-    bg: "bg-orange-600/10",
-    border: "border-orange-600/20",
-    href: "/services/terrassenbau"
-  },
-  {
-    icon: Ruler,
-    title: "Baumschnitt",
-    description: "Erhaltungsschnitt für die Gesundheit und Sicherheit Ihrer Bäume.",
-    color: "text-emerald-600",
-    bg: "bg-emerald-600/10",
-    border: "border-emerald-600/20",
-    href: "/services/baumschnitt"
-  },
-  {
     icon: Leaf,
     title: "Rollrasen",
     description: "Sofort grüne Rasenflächen mit hochwertiger Qualität und professioneller Verlegung.",
@@ -62,9 +35,9 @@ export default function Services() {
   return (
     <section id="services" className="py-32 relative bg-[#FDFBF7] overflow-hidden">
       {/* Background Texture */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none mix-blend-multiply" 
-           style={{ backgroundImage: "url('/images/texture-leaf-macro.png')", backgroundSize: "cover" }} />
-      
+      <div className="absolute inset-0 opacity-5 pointer-events-none mix-blend-multiply"
+        style={{ backgroundImage: "url('/images/texture-leaf-macro.png')", backgroundSize: "cover" }} />
+
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Was wir tun</span>
@@ -112,12 +85,12 @@ export default function Services() {
               </div>
             </Link>
           ))}
-          
+
           {/* Visual Element Card */}
           <div className="relative h-80 rounded-2xl overflow-hidden group shadow-lg">
-            <img 
-              src="/images/service-icon-natural.png" 
-              alt="Gartenwerkzeug" 
+            <img
+              src="/images/service-icon-natural.png"
+              alt="Gartenwerkzeug"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/80 via-transparent to-transparent" />
