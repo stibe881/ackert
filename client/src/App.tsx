@@ -16,12 +16,16 @@ import Pflanzenpflege from "./pages/services/Pflanzenpflege";
 import Baumschnitt from "./pages/services/Baumschnitt";
 import Terrassenbau from "./pages/services/Terrassenbau";
 import Rollrasen from "./pages/services/Rollrasen";
+import ProjectGallery from "./pages/projects/ProjectGallery";
+import QualityDetail from "./pages/projects/QualityDetail";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/projekte/:projectId"} component={ProjectGallery} />
+      <Route path={"/qualitaet-im-detail"} component={QualityDetail} />
       <Route path={"/about"} component={About} />
       <Route path={"/career"} component={Career} />
       <Route path={"/imprint"} component={Imprint} />
@@ -50,7 +54,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider
         defaultTheme="light"
-        // switchable
+      // switchable
       >
         <TooltipProvider>
           <Toaster />

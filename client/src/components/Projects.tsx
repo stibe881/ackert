@@ -1,28 +1,32 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
 
 const projects = [
   {
     id: 1,
+    slug: "rollrasen",
     title: "Rollrasen",
     category: "Rollrasen",
     image: "/images/project-rollrasen.jpg",
     description: "Professionelle Verlegung von hochwertigem Rollrasen für sofortiges Grün."
   },
   {
-    id: 2,
-    title: "Gartengestaltung",
-    category: "Gartengestaltung",
-    image: "/images/project-gartengestaltung-ref.jpg",
-    description: "Individuelle Gartengestaltung, die Ästhetik und Funktionalität harmonisch vereint."
-  },
-  {
     id: 3,
+    slug: "landschaftsbau",
     title: "Landschaftsbau",
     category: "Landschaftsbau",
     image: "/images/project-landschaftsbau-ref.jpg",
     description: "Professioneller Landschaftsbau für anspruchsvolle Aussenanlagen und Geländestrukturen."
+  },
+  {
+    id: 2,
+    slug: "gartengestaltung",
+    title: "Gartengestaltung",
+    category: "Gartengestaltung",
+    image: "/images/project-gartengestaltung-ref.jpg",
+    description: "Individuelle Gartengestaltung, die Ästhetik und Funktionalität harmonisch vereint."
   }
 ];
 
@@ -93,9 +97,13 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/90 via-transparent to-transparent opacity-40" />
 
                 <div className="absolute bottom-8 right-8">
-                  <Button className="rounded-full w-16 h-16 bg-white text-[#2D241E] hover:bg-primary hover:text-white transition-colors flex items-center justify-center shadow-lg">
-                    <ArrowUpRight className="w-6 h-6" />
-                  </Button>
+                  <Link href={`/projekte/${project.slug}`}>
+                    <Button
+                      className="rounded-full w-16 h-16 bg-white text-[#2D241E] hover:bg-primary hover:text-white transition-colors flex items-center justify-center shadow-lg cursor-pointer"
+                    >
+                      <ArrowUpRight className="w-6 h-6" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}

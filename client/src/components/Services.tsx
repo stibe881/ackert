@@ -3,13 +3,13 @@ import { Link } from "wouter";
 
 const services = [
   {
-    icon: Sprout,
-    title: "Gartengestaltung",
-    description: "Individuelle Konzepte, die den Charakter Ihres Grundstücks unterstreichen.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    border: "border-primary/20",
-    href: "/services/gartengestaltung"
+    icon: Leaf,
+    title: "Rollrasen",
+    description: "Sofort grüne Rasenflächen mit hochwertiger Qualität und professioneller Verlegung.",
+    color: "text-lime-600",
+    bg: "bg-lime-600/10",
+    border: "border-lime-600/20",
+    href: "/services/rollrasen"
   },
   {
     icon: Trees,
@@ -21,13 +21,13 @@ const services = [
     href: "/services/landschaftsbau"
   },
   {
-    icon: Leaf,
-    title: "Rollrasen",
-    description: "Sofort grüne Rasenflächen mit hochwertiger Qualität und professioneller Verlegung.",
-    color: "text-lime-600",
-    bg: "bg-lime-600/10",
-    border: "border-lime-600/20",
-    href: "/services/rollrasen"
+    icon: Flower2,
+    title: "Gartengestaltung",
+    description: "Individuelle Konzepte, die den Charakter Ihres Grundstücks unterstreichen.",
+    color: "text-primary",
+    bg: "bg-primary/10",
+    border: "border-primary/20",
+    href: "/services/gartengestaltung"
   }
 ];
 
@@ -87,22 +87,24 @@ export default function Services() {
           ))}
 
           {/* Visual Element Card */}
-          <div className="relative h-80 md:col-span-2 lg:col-span-3 rounded-2xl overflow-hidden group shadow-lg">
-            <img
-              src="/images/service-icon-natural.png"
-              alt="Gartenwerkzeug"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/80 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 p-8">
-              <h3 className="font-display font-bold text-2xl text-white mb-2">
-                Qualität im Detail
-              </h3>
-              <p className="text-gray-200 text-sm font-light">
-                Jeder Handgriff sitzt. Wir arbeiten mit Präzision und Liebe zum Detail.
-              </p>
+          <Link href="/qualitaet-im-detail">
+            <div className="relative h-80 md:col-span-2 lg:col-span-3 rounded-2xl overflow-hidden group shadow-lg cursor-pointer">
+              <img
+                src="/images/service-icon-natural.png"
+                alt="Gartenwerkzeug"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/80 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 p-8">
+                <h3 className="font-display font-bold text-2xl text-white mb-2">
+                  Qualität im Detail
+                </h3>
+                <p className="text-gray-200 text-sm font-light">
+                  Jeder Handgriff sitzt. Wir arbeiten mit Präzision und Liebe zum Detail.
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
