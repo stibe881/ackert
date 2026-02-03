@@ -16,14 +16,16 @@ export default function FleetImage() {
                         alt="Ackert Garten Fuhrpark und Magazin"
                         className="w-full h-[500px] md:h-[600px] object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[3s]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/60 via-transparent to-transparent opacity-60" />
-                    <div className="absolute bottom-8 left-8 right-8 text-white">
-                        <h3 className="font-display font-bold text-2xl md:text-3xl mb-2">
-                            Unser Fuhrpark & Magazin
-                        </h3>
-                        <p className="text-gray-200 font-light max-w-2xl">
-                            Immer einsatzbereit für Ihr Projekt. Von unserem Magazin in Trimbach aus koordinieren wir unsere Einsätze in der gesamten Region.
-                        </p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent opacity-60" />
+                    <div className="absolute bottom-8 left-8 right-8">
+                        <div className="bg-white/80 backdrop-blur-md p-6 md:p-8 rounded-2xl md:max-w-xl shadow-lg border border-white/20">
+                            <h3 className="font-display font-bold text-2xl md:text-3xl mb-2 text-primary">
+                                Unser Fuhrpark & Magazin
+                            </h3>
+                            <p className="text-[#5D4037] font-light leading-relaxed">
+                                Immer einsatzbereit für Ihr Projekt. Von unserem Magazin in Trimbach aus koordinieren wir unsere Einsätze in der gesamten Region.
+                            </p>
+                        </div>
                     </div>
                 </motion.div>
             </div>
