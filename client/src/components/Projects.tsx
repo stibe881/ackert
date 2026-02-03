@@ -5,10 +5,10 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Naturschwimmteich",
-    category: "Wasser im Garten",
-    image: "/images/project-pool.png",
-    description: "Ein biologischer Schwimmteich, harmonisch in die Landschaft integriert."
+    title: "Rollrasen",
+    category: "Rollrasen",
+    image: "/images/project-rollrasen.jpg",
+    description: "Professionelle Verlegung von hochwertigem Rollrasen für sofortiges Grün."
   },
   {
     id: 2,
@@ -48,12 +48,12 @@ export default function Projects() {
           {/* Project List - Left Side */}
           <div className="lg:col-span-4 space-y-2">
             {projects.map((project, index) => (
-              <div 
+              <div
                 key={project.id}
                 className={`
                   p-8 cursor-pointer transition-all duration-500 border-l-2
-                  ${activeProject === index 
-                    ? "border-primary bg-white/5 pl-8" 
+                  ${activeProject === index
+                    ? "border-primary bg-white/5 pl-8"
                     : "border-white/10 hover:border-white/30 pl-6 hover:pl-8 bg-transparent"
                   }
                 `}
@@ -79,19 +79,19 @@ export default function Projects() {
                 key={project.id}
                 className={`
                   absolute inset-0 rounded-sm overflow-hidden shadow-2xl transition-all duration-1000 ease-in-out
-                  ${activeProject === index 
-                    ? "opacity-100 translate-x-0 z-10" 
+                  ${activeProject === index
+                    ? "opacity-100 translate-x-0 z-10"
                     : "opacity-0 translate-x-12 z-0"
                   }
                 `}
               >
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-[2s]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D241E]/90 via-transparent to-transparent opacity-40" />
-                
+
                 <div className="absolute bottom-8 right-8">
                   <Button className="rounded-full w-16 h-16 bg-white text-[#2D241E] hover:bg-primary hover:text-white transition-colors flex items-center justify-center shadow-lg">
                     <ArrowUpRight className="w-6 h-6" />
@@ -99,7 +99,7 @@ export default function Projects() {
                 </div>
               </div>
             ))}
-            
+
             {/* Decorative Frame */}
             <div className="absolute -inset-4 border border-white/10 -z-10 translate-x-4 translate-y-4" />
           </div>
