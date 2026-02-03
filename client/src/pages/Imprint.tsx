@@ -50,7 +50,7 @@ export default function Imprint() {
               </h2>
               <div className="text-[#5D4E37] space-y-2">
                 <p>
-                  <span className="font-semibold text-[#2D241E]">Handelsregisternummer:</span> CHE-XXX.XXX.XXX
+                  <span className="font-semibold text-[#2D241E]">Handelsregisternummer:</span> CH-241.4.025.930-2
                 </p>
                 <p>
                   <span className="font-semibold text-[#2D241E]">Registergericht:</span> Olten
@@ -78,7 +78,7 @@ export default function Imprint() {
                 <p>
                   <span className="font-semibold text-[#2D241E]">UID:</span>
                   <br />
-                  CHE-XXX.XXX.XXX MWST
+                  CHE-132.028.173 MWST
                 </p>
               </div>
             </section>
