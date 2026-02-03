@@ -8,19 +8,17 @@ echo "🚀 Starting deployment..."
 echo "📥 Pulling latest changes..."
 git pull origin main || git pull origin master
 
-# Dependencies aktualisieren (nur wenn package.json geändert wurde)
-if git diff HEAD@{1} --name-only | grep -q "package.json"; then
-    echo "📦 Installing dependencies..."
-    npm install
-fi
+# Dependencies aktualisieren
+echo "📦 Checking dependencies..."
+npm install
 
 # Production Build erstellen
 echo "🔨 Building application..."
 npm run build
 
-# PM2 neu starten
+# PM2 neu starten oder starten
 echo "♻️  Restarting application..."
-pm2 restart ackert.ch
+pm2 restart ackert.ch || pm2 start npm --name "ackert.ch" -- start
 
 echo "✅ Deployment complete!"
 echo ""
