@@ -66,7 +66,7 @@ export default function Imprint() {
                 Vertretungsberechtigte Person
               </h2>
               <div className="text-[#5D4E37]">
-                <p>Geschäftsführer: Max Ackert</p>
+                <p>Geschäftsführer: Erdzan Kalac</p>
               </div>
             </section>
 
