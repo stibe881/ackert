@@ -12,17 +12,17 @@ const projects = [
   },
   {
     id: 2,
-    title: "Mediterrane Terrasse",
-    category: "Terrassenbau",
-    image: "/images/project-terrace.png",
-    description: "Südländisches Flair mit Naturstein und hitzeverträglichen Pflanzen."
+    title: "Gartengestaltung",
+    category: "Gartengestaltung",
+    image: "/images/project-gartengestaltung-ref.jpg",
+    description: "Individuelle Gartengestaltung, die Ästhetik und Funktionalität harmonisch vereint."
   },
   {
     id: 3,
-    title: "Stadtgarten Oase",
-    category: "Gartengestaltung",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1632&auto=format&fit=crop",
-    description: "Maximale Erholung auf minimalem Raum mitten in der Stadt."
+    title: "Landschaftsbau",
+    category: "Landschaftsbau",
+    image: "/images/project-landschaftsbau-ref.jpg",
+    description: "Professioneller Landschaftsbau für anspruchsvolle Aussenanlagen und Geländestrukturen."
   }
 ];
 
