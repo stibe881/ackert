@@ -47,16 +47,19 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
     setErrorMessage("");
 
     try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", `${formData.firstName} ${formData.lastName}`);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("subject", position);
+      formDataToSend.append("message", `Telefon: ${formData.phone}\n\nNachricht: ${formData.message}`);
+      formDataToSend.append("type", "application");
+      if (cvFile) {
+        formDataToSend.append("cvFile", cvFile);
+      }
+
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: `${formData.firstName} ${formData.lastName}`,
-          email: formData.email,
-          subject: position,
-          message: `Telefon: ${formData.phone}\n\nNachricht: ${formData.message}`,
-          type: "application"
-        })
+        body: formDataToSend
       });
 
       if (!response.ok) {
@@ -104,7 +107,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
                 required
                 value={formData.firstName}
                 onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                className="w-full"
+                className="w-full text-black bg-white border-gray-200"
               />
             </div>
             <div>
@@ -117,7 +120,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
                 required
                 value={formData.lastName}
                 onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                className="w-full"
+                className="w-full text-black bg-white border-gray-200"
               />
             </div>
           </div>
@@ -134,7 +137,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full"
+                className="w-full text-black bg-white border-gray-200"
               />
             </div>
             <div>
@@ -146,7 +149,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full"
+                className="w-full text-black bg-white border-gray-200"
               />
             </div>
           </div>
@@ -162,7 +165,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Erzählen Sie uns kurz über sich und warum Sie zu Ackert Garten GmbH passen..."
-              className="w-full"
+              className="w-full text-[#2D241E] bg-white border-gray-200 focus:border-primary focus:ring-primary"
             />
           </div>
 
@@ -227,7 +230,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
               type="button"
               variant="outline"
               onClick={onClose}
-              className="flex-1"
+              className="flex-1 text-black border-gray-300 hover:bg-gray-100"
               disabled={isSubmitting}
             >
               Abbrechen
@@ -241,7 +244,7 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
             </Button>
           </div>
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

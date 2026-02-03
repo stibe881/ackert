@@ -4,8 +4,18 @@ import path from "path";
 import { fileURLToPath } from "url";
 import nodemailer from "nodemailer";
 
+import multer from "multer";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Configure multer for file uploads in memory
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 10 * 1024 * 1024 // 10MB limit
+  }
+});
 
 async function startServer() {
   const app = express();
@@ -27,16 +37,26 @@ async function startServer() {
     path: '/usr/sbin/sendmail'
   });
 
-  // Contact API Endpoint
-  app.post("/api/contact", async (req, res) => {
+  // Contact API Endpoint with Multer support for attachments
+  app.post("/api/contact", upload.single('cvFile'), async (req, res) => {
     const { name, email, subject, message, type } = req.body;
 
-    const mailOptions = {
+    const mailOptions: any = {
       from: `"${name}" <${email}>`,
       to: "ackertgarten@hotmail.com",
       subject: type === "application" ? `Bewerbung: ${subject}` : `Kontaktanfrage: ${subject}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     };
+
+    // Add attachment if a file was uploaded
+    if (req.file) {
+      mailOptions.attachments = [
+        {
+          filename: req.file.originalname,
+          content: req.file.buffer
+        }
+      ];
+    }
 
     try {
       await transporter.sendMail(mailOptions);
