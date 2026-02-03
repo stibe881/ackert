@@ -18,6 +18,7 @@ import Terrassenbau from "./pages/services/Terrassenbau";
 import Rollrasen from "./pages/services/Rollrasen";
 import ProjectGallery from "./pages/projects/ProjectGallery";
 import QualityDetail from "./pages/projects/QualityDetail";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function Router() {
@@ -58,6 +59,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <ScrollToTop />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
