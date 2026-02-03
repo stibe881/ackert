@@ -47,23 +47,20 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
     setErrorMessage("");
 
     try {
-      const formDataToSend = new FormData();
-      formDataToSend.append("firstName", formData.firstName);
-      formDataToSend.append("lastName", formData.lastName);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("message", formData.message);
-      formDataToSend.append("position", position);
-      formDataToSend.append("cv", cvFile);
-
-      const response = await fetch("/api/application.php", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        body: formDataToSend
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          subject: position,
+          message: `Telefon: ${formData.phone}\n\nNachricht: ${formData.message}`,
+          type: "application"
+        })
       });
 
       if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || "Fehler beim Senden der Bewerbung");
+        throw new Error("Fehler beim Senden der Bewerbung");
       }
 
       setSubmitStatus("success");

@@ -10,7 +10,7 @@ const projects = [
     title: "Rollrasen",
     category: "Rollrasen",
     image: "/images/project-rollrasen.jpg",
-    description: "Professionelle Verlegung von hochwertigem Rollrasen für sofortiges Grün."
+    description: "Professionelle Verlegung von hochwertigem schweizer Rollrasen für sofortiges Grün."
   },
   {
     id: 3,

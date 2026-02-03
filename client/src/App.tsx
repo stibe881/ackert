@@ -19,6 +19,7 @@ import Rollrasen from "./pages/services/Rollrasen";
 import ProjectGallery from "./pages/projects/ProjectGallery";
 import QualityDetail from "./pages/projects/QualityDetail";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieBanner from "./components/CookieBanner";
 
 
 function Router() {
@@ -60,6 +61,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <ScrollToTop />
+          <CookieBanner />
           <Router />
         </TooltipProvider>
       </ThemeProvider>

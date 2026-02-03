@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const projectData: Record<string, { title: string, description: string, imageCount: number }> = {
     "rollrasen": {
         title: "Rollrasen",
-        description: "Professionelle Verlegung von hochwertigem Rollrasen für sofortiges Grün.",
+        description: "Professionelle Verlegung von hochwertigem schweizer Rollrasen für sofortiges Grün.",
         imageCount: 11
     },
     "landschaftsbau": {

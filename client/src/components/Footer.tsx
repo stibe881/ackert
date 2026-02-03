@@ -54,16 +54,27 @@ export default function Footer() {
             <h4 className="font-display font-bold text-lg mb-8 text-white">Kontakt</h4>
             <ul className="space-y-6">
               <li className="flex items-start gap-4 group">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Schöneggstrasse+1a,+5012+Schönenwerd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#D7CCC8] text-sm font-light group-hover:text-white transition-colors"
-                >
-                  Schöneggstrasse 1a<br />
-                  5012 Schönenwerd
-                </a>
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
+                <div className="space-y-3">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Schöneggstrasse+1a,+5012+Schönenwerd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#D7CCC8] text-sm font-light hover:text-white transition-colors block"
+                  >
+                    <span className="font-medium text-white/90">Hauptsitz:</span><br />
+                    Schöneggstrasse 1a, 5012 Schönenwerd
+                  </a>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Baslerstrasse+267,+4632+Trimbach"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#D7CCC8] text-sm font-light hover:text-white transition-colors block"
+                  >
+                    <span className="font-medium text-white/90">Magazin:</span><br />
+                    Baslerstrasse 267, 4632 Trimbach
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-4 group">
                 <Phone className="w-5 h-5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
