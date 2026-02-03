@@ -87,7 +87,7 @@ export default function Services() {
           ))}
 
           {/* Visual Element Card */}
-          <div className="relative h-80 rounded-2xl overflow-hidden group shadow-lg">
+          <div className="relative h-80 md:col-span-2 lg:col-span-3 rounded-2xl overflow-hidden group shadow-lg">
             <img
               src="/images/service-icon-natural.png"
               alt="Gartenwerkzeug"
