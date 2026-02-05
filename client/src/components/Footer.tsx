@@ -18,7 +18,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/ackert_garten/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/ackertgartenbaugmbh" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
+              <a href="https://www.facebook.com/people/Ackert-Garten-GmbH/61572957625930/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#D7CCC8] hover:bg-primary hover:text-white transition-all duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -96,6 +96,8 @@ export default function Footer() {
             <a href="https://gross-ict.ch" target="_blank" rel="noopener noreferrer" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">
               Realisation: Gross ICT
             </a>
+            <span className="text-[#D7CCC8]/60 text-xs">•</span>
+            <Link href="/about" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Über uns</Link>
             <span className="text-[#D7CCC8]/60 text-xs">•</span>
             <Link href="/imprint" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Impressum</Link>
             <Link href="/privacy" className="text-[#D7CCC8]/60 hover:text-white text-xs transition-colors font-light">Datenschutz</Link>

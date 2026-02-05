@@ -5,7 +5,13 @@
   # Don't rewrite files or directories
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
 
   # Rewrite everything else to index.html
-  RewriteRule . /index.html [L]
+  RewriteRule ^(.*)$ /index.html [L,QSA]
+</IfModule>
+
+# Fallback for servers without mod_rewrite
+<IfModule !mod_rewrite.c>
+  ErrorDocument 404 /index.html
 </IfModule>

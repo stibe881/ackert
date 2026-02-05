@@ -48,16 +48,17 @@ export default function ApplicationForm({ position, onClose }: ApplicationFormPr
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append("name", `${formData.firstName} ${formData.lastName}`);
+      formDataToSend.append("firstName", formData.firstName);
+      formDataToSend.append("lastName", formData.lastName);
       formDataToSend.append("email", formData.email);
-      formDataToSend.append("subject", position);
-      formDataToSend.append("message", `Telefon: ${formData.phone}\n\nNachricht: ${formData.message}`);
-      formDataToSend.append("type", "application");
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("position", position);
+      formDataToSend.append("message", formData.message);
       if (cvFile) {
-        formDataToSend.append("cvFile", cvFile);
+        formDataToSend.append("cv", cvFile);
       }
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/application.php", {
         method: "POST",
         body: formDataToSend
       });

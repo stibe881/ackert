@@ -71,7 +71,7 @@ $cvContent = file_get_contents($cvTmpName);
 $cvContentEncoded = chunk_split(base64_encode($cvContent));
 
 // Email configuration
-$to = 'ackertgarten@hotmail.com';
+$to = 'stefan.gross@hotmail.ch';
 $subject = 'Bewerbung: ' . $position;
 
 // Create email boundary
