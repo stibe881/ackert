@@ -46,7 +46,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email configuration
-$to = 'stefan.gross@hotmail.ch';
+$to = 'ackertgarten@hotmail.com';
 $mailSubject = 'Kontaktanfrage: ' . $subject;
 
 // Email headers

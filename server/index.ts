@@ -43,7 +43,7 @@ async function startServer() {
 
     const mailOptions: any = {
       from: `"${name}" <${email}>`,
-      to: "stefan.gross@hotmail.ch",
+      to: "ackertgarten@hotmail.com",
       subject: type === "application" ? `Bewerbung: ${subject}` : `Kontaktanfrage: ${subject}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     };
